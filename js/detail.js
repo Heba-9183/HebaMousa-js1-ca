@@ -2,9 +2,11 @@
 
 const detailContainer = document.querySelector(".anime-details");
 const queryString = document.location.search;
+
 const params = new URLSearchParams(queryString);
 
 const id = params.get("mal_id");
+params.forEach((element) => console.log(element));
 
 console.log(id);
 if (id === null) {

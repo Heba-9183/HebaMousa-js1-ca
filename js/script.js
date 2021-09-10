@@ -15,13 +15,13 @@ async function callingAPI() {
       console.log(details[i].title);
       console.log(details[i].score);
       console.log(details[i].type);
-      if (i === 20) {
+      if (i === 6) {
         break;
       }
 
       //<div class="result" style="background-image: url(${details.image_url});"></div>
       container.innerHTML += `<a href="details.html?id=${details.mal_id}" class="result">
-      
+     
     <div class="title">Title:${details[i].title}</div> 
     <div class="score">Score: ${details[i].score}</div> 
     <div class="type">Type: ${details[i].type}</div> </a> 
